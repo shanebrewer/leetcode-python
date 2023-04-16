@@ -21,11 +21,11 @@ class Solution:
                 sum += l2.val
                 l2 = l2.next
             carry, remainder = divmod(sum, 10)
-            current_node.val = remainder
-            current_node.next = ListNode()
+            newNode = ListNode (remainder)
+            current_node.next = newNode
             current_node = current_node.next
         
-        return result           
+        return result.next
 
 if __name__ == '__main__':
     s = Solution()

@@ -1,5 +1,5 @@
 import unittest
-from python.src.add_two_numbers_1 import ListNode, Solution
+from leetcode.AddTwoNumbers.add_two_numbers_1 import ListNode, Solution
 
 class Test_Add2Numbers(unittest.TestCase):
     def setUp(self) -> None:
@@ -10,7 +10,7 @@ class Test_Add2Numbers(unittest.TestCase):
         list2 = ListNode(5, ListNode(6, ListNode(4)))
         solution = ListNode(7, ListNode(0, ListNode(8)))
         result = self.s.addTwoNumbers(list1, list2)
-        self.assertEqual(result, solution)
+        self.assertEqual(result.__dict__, solution.__dict__)
         
     def test_zero_result(self):
         list1 = ListNode(0)

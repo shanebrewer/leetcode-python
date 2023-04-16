@@ -1,5 +1,5 @@
 import unittest
-from python.src import twosum_2
+from leetcode.TwoSum import twosum_2
 
 class Test_TwoSum(unittest.TestCase):
     def setUp(self):
